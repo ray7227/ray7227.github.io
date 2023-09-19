@@ -1,8 +1,8 @@
 /* General */
 body {
-    background-color: black; /* Set the background to black */
-    color: white; /* Set text color to white */
-    font-family: Arial, sans-serif; /* Specify a font family */
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
 /* Scrollbar styles */
@@ -74,7 +74,7 @@ img {
 
 /* Nav Bar */
 .my-nav a {
-    color: white; /* Set link color to white */
+    color: white;
 }
 
 .my-nav img {
@@ -155,5 +155,29 @@ img {
 /* Center align GitHub and LinkedIn buttons */
 .center-buttons {
     text-align: center;
-    margin-top: 20px; /* Adjust the margin as needed */
+    margin-top: 20px;
+}
+
+/* Navigation Links */
+.top-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.top-links li {
+    margin-right: 20px;
+}
+
+.top-links li a {
+    color: black;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.top-links li a:hover {
+    border-color: white;
 }
