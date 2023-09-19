@@ -1,12 +1,15 @@
 /* General */
-body{
-    background-color: white;
+body {
+    background-color: black; /* Set the background to black */
+    color: white; /* Set text color to white */
+    font-family: Arial, sans-serif; /* Specify a font family */
 }
-/* The emerging W3C standard
-   that is currently Firefox-only */
+
+/* Scrollbar styles */
+/* The emerging W3C standard that is currently Firefox-only */
 * {
     scrollbar-width: thin;
-    scrollbar-color: lightgray white;
+    scrollbar-color: lightgray black;
 }
 
 /* Works on Chrome/Edge/Safari */
@@ -14,35 +17,38 @@ body{
     width: 12px;
 }
 
-
 *::-webkit-scrollbar-thumb {
     background-color: lightgray;
     border-radius: 20px;
-    border: 3px solid white;
+    border: 3px solid black;
 }
-  
 
+/* Horizontal line style */
 hr {
     background-color: whitesmoke;
 }
 
-iframe{
+/* Responsive iframe size */
+iframe {
     width: max(33.3vw, 324px);
     height: max(22.7vw, 135px);
 }
 
+/* Remove pointer events on images and prevent text selection */
 img {
     pointer-events: none;
     user-select: none;
-    -webkit-user-select:none;
-    -webkit-touch-callout:none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
 }
 
+/* Remove box shadow where not needed */
 .shadowless {
     box-shadow: none!important;
 }
 
-.code-tags span{
+/* Styling for code tags */
+.code-tags span {
     font-family: Consolas, monaco, monospace;
     padding: 2px;
     background-color: #b7e5c4;
@@ -50,35 +56,34 @@ img {
     margin-right: min(1vh, 1vw);
 }
 
-.my-highlight :hover{
+/* Highlight on hover */
+.my-highlight :hover {
     background-color: whitesmoke;
 }
 
-
 /* Header */
-#my-title{
+#my-title {
     font-size: 3em;
     text-align: center;
 }
 
-.my-header{
+/* Header style for "my-header" class */
+.my-header {
     font-size: 1.5em;
 }
 
-
 /* Nav Bar */
-
-.my-nav a{
-    color: black;
+.my-nav a {
+    color: white; /* Set link color to white */
 }
 
-.my-nav img{
+.my-nav img {
     height: min(10vh, 10vw);
     width: min(10vh, 10vw);
     position: relative;
 }
 
-.my-nav h2{
+.my-nav h2 {
     text-align: center;
 }
 
@@ -86,7 +91,6 @@ img {
     display: flex;
     justify-content: center;
 }
-
 
 .my-nav-content ul {
     list-style-type: none;
@@ -100,10 +104,9 @@ img {
     float: left;
 }
 
-
 .my-nav-content li a {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 16px;
     text-decoration: none;
@@ -113,9 +116,8 @@ img {
     background-color: whitesmoke;
 }
 
-
 /* Other Project Reference Link */
-.other-projects{
+.other-projects {
     margin-top: 2%;
     color: lightgray;
 }
@@ -132,7 +134,6 @@ img {
     float: left;
 }
 
-
 .other-projects li a {
     display: block;
     color: lightgray;
@@ -140,13 +141,19 @@ img {
     text-decoration: none;
 }
 
-.other-projects li a:hover{
+.other-projects li a:hover {
     color: gray;
 }
 
 /* Copy Right Logo */
-.my-copyright{
+.my-copyright {
     text-align: center;
     font-size: 1em;
-    color: black;
+    color: white;
+}
+
+/* Center align GitHub and LinkedIn buttons */
+.center-buttons {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
 }
