@@ -1,9 +1,11 @@
 /* General */
-body{
-    background-color: white;
+body {
+    background-color: black; /* Set the background to black */
+    color: white; /* Set text color to white */
 }
-/* The emerging W3C standard
-   that is currently Firefox-only */
+
+/* Scrollbar */
+/* The emerging W3C standard that is currently Firefox-only */
 * {
     scrollbar-width: thin;
     scrollbar-color: lightgray white;
@@ -14,139 +16,73 @@ body{
     width: 12px;
 }
 
-
 *::-webkit-scrollbar-thumb {
     background-color: rgb(0, 0, 0);
     border-radius: 20px;
     border: 3px solid white;
 }
-  
-
-hr {
-    background-color: rgb(0, 0, 0);
-}
-
-iframe{
-    width: max(33.3vw, 324px);
-    height: max(22.7vw, 135px);
-}
-
-img {
-    pointer-events: none;
-    user-select: none;
-    -webkit-user-select:none;
-    -webkit-touch-callout:none;
-}
-
-.shadowless {
-    box-shadow: none!important;
-}
-
-.code-tags span{
-    font-family: Consolas, monaco, monospace;
-    padding: 2px;
-    background-color: #000000;
-    background-color: rgb(0, 0, 0);
-    margin-right: min(1vh, 1vw);
-}
-
-.my-highlight :hover{
-    background-color: rgb(0, 0, 0);
-}
-
 
 /* Header */
-#my-title{
+#my-title {
     font-size: 3em;
     text-align: center;
+    color: white; /* Set title text color to white */
 }
 
-.my-header{
+.my-header {
     font-size: 1.5em;
+    color: white; /* Set header text color to white */
 }
-
 
 /* Nav Bar */
-
-.my-nav a{
-    color: black;
+.my-nav a {
+    color: white; /* Set nav link text color to white */
 }
 
-.my-nav img{
+.my-nav img {
     height: min(10vh, 10vw);
     width: min(10vh, 10vw);
     position: relative;
+    filter: invert(1); /* Invert the color of the icons to white */
 }
 
-.my-nav h2{
+.my-nav h2 {
     text-align: center;
+    color: white; /* Set nav header text color to white */
 }
-
-.my-nav-content {
-    display: flex;
-    justify-content: center;
-}
-
-
-.my-nav-content ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.my-nav-content li {
-    font-size: min(3h, 3vw);
-    float: left;
-}
-
 
 .my-nav-content li a {
     display: block;
-    color: rgb(255, 255, 255);
     text-align: center;
     padding: 16px;
     text-decoration: none;
+    color: white; /* Set nav link text color to white */
 }
 
 .my-nav-content li a:hover {
     background-color: rgb(0, 0, 0);
 }
 
-
 /* Other Project Reference Link */
-.other-projects{
+.other-projects {
     margin-top: 2%;
-    color: rgb(0, 0, 0);
+    color: white; /* Set text color to white */
 }
-
-.other-projects ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.other-projects li {
-    font-size: min(3.5vh, 3.5vw);
-    float: left;
-}
-
 
 .other-projects li a {
     display: block;
-    color: lightgray;
     padding: 16px;
     text-decoration: none;
+    color: lightgray; /* Set link text color to light gray */
 }
 
-.other-projects li a:hover{
-    color: gray;
+.other-projects li a:hover {
+    color: gray; /* Change link text color on hover */
 }
 
 /* Copy Right Logo */
-.my-copyright{
+.my-copyright {
     text-align: center;
     font-size: 1em;
-    color: black;
+    color: white; /* Set text color to white */
 }
