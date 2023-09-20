@@ -23,12 +23,18 @@
 
         /* Center-align text and image */
         .center-content {
-            text-align: center;
+            text-align: left; /* Align text to the left */
         }
 
         /* Add some margin between elements for spacing */
         .my-header, .my-text {
             margin-bottom: 20px;
+        }
+
+        /* Position the image to the right */
+        .image-container {
+            float: right; /* Float the container to the right */
+            margin-left: 20px; /* Add some space between text and image */
         }
     </style>
 </head>
@@ -53,6 +59,9 @@
             <p class="my-text">
                 This page is under construction. 
             </p>
+        </div>
+        
+        <div class="image-container">
             <img src="face.jpg" alt="Ryan Ray's Photo" class="my-photo"> <!-- Add your photo here -->
         </div>
         <br>
