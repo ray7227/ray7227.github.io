@@ -11,6 +11,19 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <style>
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+            grid-gap: 20px; /* Adjust spacing between photos */
+        }
+
+        .photo-grid img {
+            max-width: 100%; /* Ensure images don't exceed their container */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
 </head>
 
 <body>
@@ -30,10 +43,47 @@
         
         <div>
             <p>
-                This page is under construction. 
+                This page is under construction.
             </p>
         </div>
         <br>
+    </div>
+
+    <!-- Mushrooms section -->
+    <div class="container">
+        <h2>Mushrooms</h2>
+        <div class="photo-grid">
+            <?php
+                $mushroomDirectory = "resources/projects/Mush/";
+                for ($i = 1; $i <= 24; $i++) {
+                    echo '<img src="' . $mushroomDirectory . 'mush' . $i . '.JPG" alt="Mushroom ' . $i . '">';
+                }
+            ?>
+        </div>
+    </div>
+
+    <!-- Beer section -->
+    <div class="container">
+        <h2>Beer</h2>
+        <div class="photo-grid">
+            <?php
+                $beerDirectory = "resources/projects/Beer/";
+                for ($i = 1; $i <= 4; $i++) {
+                    echo '<img src="' . $beerDirectory . 'beer' . $i . '.JPG" alt="Beer ' . $i . '">';
+                }
+            ?>
+        </div>
+    </div>
+
+    <!-- Cheese section -->
+    <div class="container">
+        <h2>Cheese</h2>
+        <div class="photo-grid">
+            <?php
+                $cheeseDirectory = "resources/projects/Cheese/";
+                echo '<img src="' . $cheeseDirectory . 'cheese1.JPG" alt="Cheese 1">';
+            ?>
+        </div>
     </div>
 
     <!-- Move LinkedIn, GitHub, and Instagram options to the very bottom of the screen -->
@@ -41,7 +91,7 @@
         <div class="my-nav-content">
             <ul class="center-align">
                 <li style="display: inline-block; margin-right: 10px;"><a href="https://www.linkedin.com/in/ryan-ray-0b6658222/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                <li style="display: inline-block;"><a href="https://github.com/ray7227" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+                <li style="display: inline-block; margin-right: 10px;"><a href="https://github.com/ray7227" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
                 <li style="display: inline-block; margin-right: 10px;"><a href="https://www.instagram.com/ray72271/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
             </ul>
         </div>
