@@ -11,6 +11,20 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            min-height: 100vh; /* Make the container at least as tall as the viewport */
+        }
+
+        .video-container video {
+            max-width: 100%;
+            max-height: 80vh; /* Limit the video's height */
+        }
+    </style>
 </head>
 
 <body>
@@ -30,15 +44,15 @@
         
         <div>
             <p>
-                This page is under construction. 
+                This page is under construction.
             </p>
         </div>
         <br>
     </div>
 
     <!-- Add your video element with a 9:16 aspect ratio -->
-    <div style="position: relative; padding-bottom: 177.78%; /* 16:9 aspect ratio */">
-        <video controls style="position: absolute; width: 30%; height: 30%;">
+    <div class="video-container">
+        <video controls>
             <source src="test.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
