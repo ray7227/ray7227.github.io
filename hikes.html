@@ -11,6 +11,19 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <style>
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+            grid-gap: 20px; /* Adjust spacing between photos */
+        }
+
+        .photo-grid img {
+            max-width: 100%; /* Ensure images don't exceed their container */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
 </head>
 
 <body>
@@ -30,8 +43,7 @@
         
         <div>
             <p>
-                Welcome to my web page! I'm Ryan Ray.
-                This page is under construction. Stay tuned for updates!
+                This page is under construction.
             </p>
         </div>
         <br>
