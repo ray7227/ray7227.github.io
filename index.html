@@ -17,8 +17,18 @@
     
     <style>
         .my-photo {
-            max-width: 20%; /* Set the maximum width to 100% of its container */
+            max-width: 20%; /* Set the maximum width to 20% of its container */
             height: auto; /* Allow the height to adjust proportionally */
+        }
+
+        /* Center-align text and image */
+        .center-content {
+            text-align: center;
+        }
+
+        /* Add some margin between elements for spacing */
+        .my-header, .my-text {
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -38,12 +48,12 @@
             </div>
         </div>
         
-        <div>
+        <div class="center-content">
             <div class="my-header">Ryan Ray</div>
-            <img src="face.jpg" alt="Ryan Ray's Photo" class="my-photo"> <!-- Add your photo here -->
-            <p>
+            <p class="my-text">
                 This page is under construction. 
             </p>
+            <img src="face.jpg" alt="Ryan Ray's Photo" class="my-photo"> <!-- Add your photo here -->
         </div>
         <br>
     </div>
