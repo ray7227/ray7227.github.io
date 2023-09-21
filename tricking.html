@@ -76,7 +76,7 @@
 
     <!-- Video in the middle of the page -->
     <div class="container center-content">
-        <video controls autoplay>
+        <video controls autoplay id="myVideo">
             <source src="test.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -92,5 +92,17 @@
             </ul>
         </div>
     </div>
+
+    <script>
+        // Get the video element by its id
+        var video = document.getElementById("myVideo");
+
+        // Add an event listener to the "ended" event of the video
+        video.addEventListener("ended", function() {
+            // Reset the video playback to the beginning
+            video.currentTime = 0;
+            video.play(); // Start playing again
+        });
+    </script>
 </body>
 </html>
