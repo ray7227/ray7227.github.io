@@ -48,20 +48,13 @@
 
         /* Style the social media links */
         .social-media-links {
-            position: relative;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background: white;
+            padding: 10px;
+            width: 100%;
             text-align: center;
-            margin-top: 20px; /* Adjust the margin as needed */
-        }
-
-        .social-media-links ul {
-            list-style: none;
-            padding: 0;
-            display: inline-block;
-        }
-
-        .social-media-links ul li {
-            display: inline-block;
-            margin-right: 10px; /* Adjust the margin as needed */
         }
     </style>
 </head>
@@ -89,13 +82,25 @@
         </video>
     </div>
 
-    <!-- Social media links at the very bottom -->
-    <div class="social-media-links">
-        <ul class="center-align">
-            <li><a href="https://www.linkedin.com/in/ryan-ray-0b6658222/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
-            <li><a href="https://github.com/ray7227" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
-            <li><a href="https://www.instagram.com/ray72271/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-        </ul>
+    <!-- Photo grid for hikes section -->
+    <div class="container">
+        <h2>Hikes</h2>
+        <div class="photo-grid">
+            <img src="resources/hikes/hike1.JPG" alt="Hike 1">
+            <img src="resources/hikes/hike2.JPG" alt="Hike 2">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+
+    <!-- Move LinkedIn, GitHub, and Instagram options to the very bottom of the screen -->
+    <div class="my-nav fixed-bottom">
+        <div class="my-nav-content">
+            <ul class="center-align">
+                <li style="display: inline-block; margin-right: 10px;"><a href="https://www.linkedin.com/in/ryan-ray-0b6658222/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                <li style="display: inline-block; margin-right: 10px;"><a href="https://github.com/ray7227" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+                <li style="display: inline-block; margin-right: 10px;"><a href="https://www.instagram.com/ray72271/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
