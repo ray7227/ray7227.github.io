@@ -17,8 +17,15 @@
     
     <style>
         .my-photo {
-            max-width: 20%; /* Set the maximum width to 100% of its container */
+            max-width: 20%; /* Set the maximum width to 20% of its container */
             height: auto; /* Allow the height to adjust proportionally */
+        }
+        
+        /* Flexbox styling */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     </style>
 </head>
@@ -38,12 +45,12 @@
             </div>
         </div>
         
-        <div>
+        <div class="flex-container"> <!-- Use Flexbox container -->
             <div class="my-header">Ryan Ray</div>
-            <img src="face.jpg" alt="Ryan Ray's Photo" class="my-photo"> <!-- Add your photo here -->
             <p>
                 This page is under construction. 
             </p>
+            <img src="face.jpg" alt="Ryan Ray's Photo" class="my-photo"> <!-- Add your photo here -->
         </div>
         <br>
     </div>
