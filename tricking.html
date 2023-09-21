@@ -19,19 +19,13 @@
             padding: 0;
         }
 
-        /* Remove padding and margin from the container */
-        .container {
-            padding: 0;
-            margin: 0;
-        }
-
         /* Center-align content horizontally and vertically */
         .center-content {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Make container full viewport height */
+            min-height: 100vh; /* Make container at least viewport height */
         }
 
         /* Style the video element */
@@ -43,11 +37,28 @@
         /* Remove margin from the navigation links */
         .my-nav-content ul {
             margin: 0;
+            padding: 0;
+        }
+
+        /* Adjust space between navigation links */
+        .my-nav-content ul li {
+            margin-right: 20px; /* Adjust as needed */
+            display: inline;
         }
     </style>
 </head>
 
 <body>
+    <div class="my-nav fixed-bottom">
+        <div class="my-nav-content">
+            <ul class="center-align">
+                <li><a href="https://www.linkedin.com/in/ryan-ray-0b6658222/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                <li><a href="https://github.com/ray7227" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+                <li><a href="https://www.instagram.com/ray72271/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
     <div class="container center-content">
         <div class="my-nav">
             <div class="my-nav-content">
@@ -69,17 +80,6 @@
             <source src="test.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-    </div>
-
-    <!-- Move LinkedIn and GitHub options to the very bottom of the screen -->
-    <div class="my-nav fixed-bottom">
-        <div class="my-nav-content">
-            <ul class="center-align">
-                <li style="display: inline-block; margin-right: 10px;"><a href="https://www.linkedin.com/in/ryan-ray-0b6658222/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                <li style="display: inline-block;"><a href="https://github.com/ray7227" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
-                <li style="display: inline-block; margin-right: 10px;"><a href="https://www.instagram.com/ray72271/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-            </ul>
-        </div>
     </div>
 </body>
 </html>
