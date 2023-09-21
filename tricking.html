@@ -89,25 +89,15 @@
         </video>
     </div>
 
-    <!-- Social media links initially hidden below the viewport -->
-    <div class="social-media-links">
-        <ul class="center-align">
-            <li><a href="https://www.linkedin.com/in/ryan-ray-0b6658222/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
-            <li><a href="https://github.com/ray7227" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
-            <li><a href="https://www.instagram.com/ray72271/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-        </ul>
+ <!-- Move LinkedIn, GitHub, and Instagram options to the very bottom of the screen -->
+    <div class="my-nav fixed-bottom">
+        <div class="my-nav-content">
+            <ul class="center-align">
+                <li style="display: inline-block; margin-right: 10px;"><a href="https://www.linkedin.com/in/ryan-ray-0b6658222/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                <li style="display: inline-block; margin-right: 10px;"><a href="https://github.com/ray7227" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+                <li style="display: inline-block; margin-right: 10px;"><a href="https://www.instagram.com/ray72271/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+            </ul>
+        </div>
     </div>
-
-    <!-- JavaScript to show social media links when scrolling -->
-    <script>
-        window.addEventListener('scroll', function() {
-            var socialMediaLinks = document.querySelector('.social-media-links');
-            if (window.scrollY > 0) {
-                socialMediaLinks.classList.add('show-social-media-links');
-            } else {
-                socialMediaLinks.classList.remove('show-social-media-links');
-            }
-        });
-    </script>
 </body>
 </html>
