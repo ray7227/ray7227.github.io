@@ -25,7 +25,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Make container full viewport height */
+            min-height: 100vh; /* Make container at least viewport height */
         }
 
         /* Style the video element */
@@ -55,12 +55,13 @@
             padding: 10px;
             width: 100%;
             text-align: center;
+            transform: translateY(100%); /* Initially, move it below the viewport */
+            transition: transform 0.3s; /* Add a smooth transition effect */
         }
 
-        /* Organize social media links horizontally */
-        .social-media-links ul li {
-            display: inline-block;
-            margin-right: 10px;
+        /* Show the social media links when scrolled */
+        .show-social-media-links .social-media-links {
+            transform: translateY(0);
         }
     </style>
 </head>
@@ -88,7 +89,7 @@
         </video>
     </div>
 
-    <!-- Social media links at the very bottom -->
+    <!-- Social media links initially hidden below the viewport -->
     <div class="social-media-links">
         <ul class="center-align">
             <li><a href="https://www.linkedin.com/in/ryan-ray-0b6658222/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
@@ -96,5 +97,17 @@
             <li><a href="https://www.instagram.com/ray72271/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
         </ul>
     </div>
+
+    <!-- JavaScript to show social media links when scrolling -->
+    <script>
+        window.addEventListener('scroll', function() {
+            var socialMediaLinks = document.querySelector('.social-media-links');
+            if (window.scrollY > 0) {
+                socialMediaLinks.classList.add('show-social-media-links');
+            } else {
+                socialMediaLinks.classList.remove('show-social-media-links');
+            }
+        });
+    </script>
 </body>
 </html>
