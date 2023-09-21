@@ -13,40 +13,73 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     
     <style>
-        .photo-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Three columns per row */
-            grid-gap: 20px; /* Adjust spacing between photos */
+        /* Reset margin and padding for the body and html elements */
+        body, html {
+            margin: 0;
+            padding: 0;
         }
 
-        .photo-grid img {
-            max-width: 100%; /* Ensure images don't exceed their container */
-            height: auto; /* Maintain aspect ratio */
+        /* Center-align content horizontally and vertically */
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Make container at least viewport height */
+        }
+
+        /* Style the video element */
+        .center-content video {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /* Remove margin from the navigation links */
+        .my-nav-content ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Adjust space between navigation links */
+        .my-nav-content ul li {
+            margin-right: 20px; /* Adjust as needed */
+            display: inline;
+        }
+
+        /* Style the social media links */
+        .social-media-links {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background: white;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="my-nav">
-            <div class="my-nav-content">
-                <ul class="center-align">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="tricking.html">Tricking</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="hikes.html">Hikes</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="music.html">Music</a></li>
-                </ul>
-            </div>
+    <!-- Directories at the very top -->
+    <div class="my-nav">
+        <div class="my-nav-content">
+            <ul class="center-align">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tricking.html">Tricking</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="hikes.html">Hikes</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="music.html">Music</a></li>
+            </ul>
         </div>
-        
-        <div>
-            <p>
-                This page is under construction.
-            </p>
-        </div>
-        <br>
+    </div>
+
+    <!-- Video in the middle of the page -->
+    <div class="container center-content">
+        <video controls>
+            <source src="test.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
     <!-- Photo grid for hikes section -->
@@ -55,19 +88,7 @@
         <div class="photo-grid">
             <img src="resources/hikes/hike1.JPG" alt="Hike 1">
             <img src="resources/hikes/hike2.JPG" alt="Hike 2">
-            <img src="resources/hikes/hike3.JPG" alt="Hike 3">
-            <img src="resources/hikes/hike4.JPG" alt="Hike 4">
-            <img src="resources/hikes/hike5.JPG" alt="Hike 5">
-            <img src="resources/hikes/hike6.JPG" alt="Hike 6">
-            <img src="resources/hikes/hike7.JPG" alt="Hike 7">
-            <img src="resources/hikes/hike8.JPG" alt="Hike 8">
-            <img src="resources/hikes/hike9.JPG" alt="Hike 9">
-            <img src="resources/hikes/hike10.JPG" alt="Hike 10">
-            <img src="resources/hikes/hike11.JPG" alt="Hike 11">
-            <img src="resources/hikes/hike12.JPG" alt="Hike 12">
-            <img src="resources/hikes/hike13.JPG" alt="Hike 13">
-            <img src="resources/hikes/hike14.JPG" alt="Hike 14">
-            <img src="resources/hikes/hike15.JPG" alt="Hike 15">
+            <!-- Add more images as needed -->
         </div>
     </div>
 
